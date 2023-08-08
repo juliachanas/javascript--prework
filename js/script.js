@@ -7,11 +7,8 @@ function playGame(playerInput) {
       return 'kamień';
     } else if (argMoveId == 2) {
       return 'papier';
-    } else if (argMoveId == 3) {
-      return 'nożyce';
     } else {
-      printMessage('Nie znam ruchu o id ' + argMoveId + '.');
-      return 'nieznany ruch';
+      return 'nożyce';
     }
   }
 
@@ -67,14 +64,8 @@ function playGame(playerInput) {
       (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')
     ) {
       printMessage('Ty wygrywasz!');
-    } else if (
-      (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') ||
-      (argComputerMove == 'papier' && argPlayerMove == 'kamień') ||
-      (argComputerMove == 'nożyce' && argPlayerMove == 'papier')
-    ) {
-      printMessage('Przegrywasz!');
     } else {
-      printMessage('Coś poszło nie tak!');
+      printMessage('Przegrywasz!');
     }
   }
 
