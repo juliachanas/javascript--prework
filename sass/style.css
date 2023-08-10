@@ -36,6 +36,10 @@ body {
   font-style: italic;
 }
 
+p {
+  font-weight: bold;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -58,4 +62,10 @@ body {
   margin-right: 50px;
   font-size: 30px;
   color: white;
+}
+
+.messages {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 120px;
 }
